@@ -1,8 +1,54 @@
 command for pull the image
 
 1.docker pull image(name)
+
 2.docker images -->(to see the docker information)
+
 3.docker run images(name) ---> To run the image in terminal
+
 4.docker ps (to see details for running image)
+
 5. docker ps -a (to see the exit image containers)
+
 6.docker  run -it python  -->( TO connect the image and docker to run images python commands)
+
+it --> interactive tty
+
+7.docker stop container(it or name) --> used to stop the container 
+
+8.docker  exec -it container(name) --> to start the container and use the commands 
+
+9.docker exec -it /bin/bash -->(for linux file stucture)
+
+10.docker start container (name)
+
+11. tag container name
+
+# docker run --name (any_name your wish) (image name)
+
+ex :-- >
+
+docker run --name python_any_name python --> image_name
+
+12. remane the container any_name
+
+# docker remane (that container name) (new name your wish)
+
+ex :--->
+
+docker remane python_any_name python_docker ---> son now the container name convert into python_any_name ---> python_docker
+
+13.deleting container 
+
+command -- > docker container prune --> this will delete all stoped container and it doesnot delete running containers
+
+the problem --> docker run python without docker run -it python
+ex --> 
+use this docker start -ai container name or it --> ai is attach interactive
+
+for building now images use dockerfile 
+commands
+1.docker build -t (u wish name) . --> this . refering this is create in Docker file
+
+for copying the txt file in the container command : 
+1.docker cp notes.txt mine_alpine :/notes.txt

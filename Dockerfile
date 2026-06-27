@@ -1,4 +1,3 @@
-FROM alpine:latest 
+FROM alpine:latest
 
-CMD ["echo","hello , world"]
-CMD ["echo","my first image"]
+CMD ["echo","balan kalan"]
