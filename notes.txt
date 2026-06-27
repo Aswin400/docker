@@ -52,3 +52,6 @@ commands
 
 for copying the txt file in the container command : 
 1.docker cp notes.txt mine_alpine :/notes.txt
+
+taking the file for container
+1.docker cp my_py_con:./notes.txt notes.txt
